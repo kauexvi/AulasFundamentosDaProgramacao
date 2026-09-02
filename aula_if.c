@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 
 /*
@@ -57,40 +58,41 @@ int main()
 
 */
 
+
 /*
-int main()
+
+int main()                               // corrigido e funcionando corretamente
 {
     int v1, v2, v3;
 
     printf("informe o primeiro valor:");
     scanf("%d",&v1);
-    setbuf(stdin, NULL);
     printf("informe o segundo valor:");
-    scanf("d%",&v2);
-    setbuf(stdin, NULL);
+    scanf("%d",&v2);
     printf("informe o terceiro valor:");
-    scanf("d%",&v3);
+    scanf("%d",&v3);
 
-    int strcmp(v1, v2, v3);
-    setbuf(stdin, NULL);
-    if  (v1 > v2  v3)
+
+    if  (v1 > v2 && v1 > v3)
         printf("valor mais alto eh %d", v1);
     else
-        if (v2 > v1  v3)
+        if (v2 > v1 && v2 > v3)
             printf("valor mais alto eh %d", v2);
         else
-            if (v3 > v1  v2)
+            if (v3 > v1 && v3 > v2)
                 printf("valor mais alto eh %d", v3);
             else
                 printf("valores iguais");
-
-    return(0);
-
 }
+
 */
 
+
+
 /*
-int main()
+
+int main()                 // corrigir um detalhe no if
+
 {
     int a, b;
 
@@ -105,17 +107,17 @@ int main()
     else
         printf("numeros nao sao multiplos");
 
-    system(0);
 }
+
 */
 
 
-int main()
+/*
 
+int main()
 {
     int a;
-
-    printf("informe o primeiro valor:");
+    printf("informe o valor:");
     scanf("%d",&a);
 
     if (a % 2 == 0)
@@ -124,7 +126,7 @@ int main()
         printf("%d eh impar",a);
 }
 
-
+*/
 
 /*
 main()                                                           // incompleto

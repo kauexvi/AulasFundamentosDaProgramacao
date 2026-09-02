@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-                        // aula 2
+                                 // aula 2
 
 /*
                             questao 1 - correta

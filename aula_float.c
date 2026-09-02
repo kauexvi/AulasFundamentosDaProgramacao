@@ -4,7 +4,7 @@
 /*
 // aula utilizando float
 
-                            // questao 1 - correta
+                              // questao 1 - correta
 
                     1) Escreva um programa em C para ler duas notas 
                           e escrever a média das notas lidas;
@@ -28,7 +28,7 @@ int main()
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
-                            // questao 2 - (corrigida)
+                                // questao 2 - (corrigida)
  
             2) Escreva um programa em C para calcular e escrever o volume de uma
                 esfera de raio R, em que R é um dado fornecido pelo usuário;
@@ -55,7 +55,7 @@ int main()
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
-                            // questao 3 - correta
+                                // questao 3 - correta
 
             3) Escreva um algoritmo para ler nome e salario bruto de um funcionário
          calcular e escreve seu salário liquido, sendo que sobre o salario bruto temos
@@ -90,6 +90,7 @@ int main()
 
 
 
+
                                 // questao 4 - (corrigida)
  
             4) Escreva um programa em C que leia 3 valores A, B e C do tipo inteiro, a
@@ -117,6 +118,7 @@ int main()
 }
 
 */
+
 /*
                                         // questao 5 - (corrigida)
 
@@ -127,6 +129,8 @@ int main()
                                 As notas consideradas são de 100, 50, 20, 10, 5 e 2.
                             As Moedas possíveis são de 1,00 - 0,50 - 0,25 – 0,10 – 0,05 
 */
+
+/*
 
 int main()
 
@@ -175,3 +179,5 @@ int main()
     printf("\no valor inteiro em moedas de 5 centavos eh : %d", m05);
 
 }
+
+*/
