@@ -247,6 +247,11 @@ int main()
 
             printf("Seu saldo final eh %.2f!", sald);
             printf("\nValor Depositado = %.2f!", vd, sald);
+            
         }
+        else 
+            printf("opcao invalida");
+        
 }
+
 
