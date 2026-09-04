@@ -182,9 +182,8 @@ main()
 
 }*/
 
-
+    
 main()
-
 {
     float sald, vd, vr;
     int tpdr;
