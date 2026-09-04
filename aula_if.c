@@ -221,5 +221,5 @@ main()
 }
 */
 
-// teste
+// test
 
