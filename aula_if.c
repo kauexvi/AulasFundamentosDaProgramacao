@@ -182,7 +182,7 @@ main()
 
 }*/
 
-/*
+
 main()
 
 {
@@ -219,4 +219,4 @@ main()
         printf("Seu saldo final eh %.2f!",sald);
         printf("\nValor Depositado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
 }
-*/
+
