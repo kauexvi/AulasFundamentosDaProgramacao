@@ -182,7 +182,7 @@ main()
 
 }*/
 
-
+/*
 main()
 
 {
@@ -209,7 +209,7 @@ main()
         printf("Seu saldo final eh %.2f!\n Sua conta foi estourada!",sald);
         printf("\nValor Retirado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
 
-    // else
+    else
         printf("\ninforme o valor que deseja Depositar : ");
         scanf("%f",&vd);
 
@@ -219,4 +219,7 @@ main()
         printf("Seu saldo final eh %.2f!",sald);
         printf("\nValor Depositado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
 }
+*/
+
+// teste
 
