@@ -129,30 +129,49 @@ int main()
 */
 
 /*
-main()                                                           // incompleto
+int main()                                                          
 {
     float altura1, peso1, altura2, peso2;
     char nome1[50];
     char nome2[50];
 
-    printf("informe o nome da primeira pessoa:");               // primeira pessoa
+    printf("informe o nome da primeira pessoa:");               
     gets(nome1);
+    printf("informe o peso da segunda pessoa:");
+    gets(nome2);
+    printf("\ninforme a altura (em centimetros) da primeira pessoa:");
+    scanf("%f",&altura1);
     printf("informe o peso da primeira pessoa:");
     scanf("%f",&peso1);
-    printf("informe a altura (em centimetros) da primeira pessoa:");
-    scanf("%f",&altura1);
-
-    printf("\n\ninforme o nome da segunda pessoa pessoa:");        // segunda pessoa
-    gets(nome2);
-    printf("\ninforme o peso da segunda pessoa:");
-    scanf("%f",&peso2);
-    printf("informe a altura (em centimetros) da segunda pessoa:");
+    printf("\ninforme a altura (em centimetros) da segunda pessoa:");        
     scanf("%f",&altura2);
+    printf("informe o peso da segunda pessoa:");
+    scanf("%f",&peso2);
 
-    if (
-}*/
+    if (peso1 > peso2)
+        printf("\n%s eh mais pesado(a) que %s",nome1,nome2);
+    else
+        if (peso2 > peso1)
+            printf("\n%s eh mais pesado(a) que %s",nome2,nome1);
+        else
+            if (peso1 == peso2)
+            printf("\n%s e %s tem o mesmo peso",nome1,nome2);
+
+    if (altura1 > altura2)
+        printf("\n%s eh mais alto(a) que %s",nome1,nome2);
+    else
+        if (altura2 > altura1)
+            printf("\n%s eh mais alto(a) que %s",nome2,nome1);
+        else
+            if (altura1 == altura2)
+            printf("\n%s e %s tem a mesma altura",nome1,nome2);
+
+}
+*/
+
 
 /*
+
 main()
 {
     int codigo;
@@ -180,10 +199,12 @@ main()
                             printf("nao ha produtos com esse codigo");
 
 
-}*/
+}
 
-/*
-main()
+*/
+
+
+int main()
 
 {
     float sald, vd, vr;
@@ -193,33 +214,39 @@ main()
     printf("informe o nome: ");
     gets(nome);
     printf("Informe seu saldo: ");
-    scanf("%f",&sald);
+    scanf("%f", &sald);
     printf("\n\nSelecione o tipo de retirada!\nDepositar = 1\nRetirar == 2\n\n");
     scanf("%d", &tpdr);
 
     if (tpdr == 2)
-    printf("\ninforme o valor que deseja Retirar : ");
-    scanf("%f",&vr);
+    {
+        printf("\ninforme o valor que deseja Retirar : ");
+        scanf("%f", &vr);
 
-    sald = sald - vr;
-    scanf("%f",&sald);
-
+        sald = sald - vr;
+        scanf("%f", &sald);
 
         if (sald < 0)
-        printf("Seu saldo final eh %.2f!\n Sua conta foi estourada!",sald);
-        printf("\nValor Retirado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
+        {
+            printf("\nVoce nao possui saldo suficiente para realizar a retirada de %.2f!", vr);
+        }
+        else 
+            printf("Seu saldo final eh %.2f!\nValor Retirado = %.2f" ,sald, vr);
+            setbuf(stdin, NULL);
+        
+    }
 
     else
-        printf("\ninforme o valor que deseja Depositar : ");
-        scanf("%f",&vd);
+        if (tpdr == 1)
+        {
+            printf("\ninforme o valor que deseja Depositar : ");
+            scanf("%f", &vd);
 
-        sald = sald - vd;
-        scanf("%f",&sald);
+            sald = sald + vd;
+            scanf("%f", &sald);
 
-        printf("Seu saldo final eh %.2f!",sald);
-        printf("\nValor Depositado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
+            printf("Seu saldo final eh %.2f!", sald);
+            printf("\nValor Depositado = %.2f!", vd, sald);
+        }
 }
-*/
-
-// test
 
