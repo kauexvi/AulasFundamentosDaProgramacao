@@ -5,8 +5,6 @@
 
 
 /*
-
-
 main()
 {
     float n1, n2, n3, media;
@@ -151,8 +149,75 @@ main()                                                           // incompleto
     printf("informe a altura (em centimetros) da segunda pessoa:");
     scanf("%f",&altura2);
 
-    if ()
+    if (
+}*/
+
+/*
+main()
+{
+    int codigo;
+
+    printf("Informe codigo: ");
+    scanf("%d", &codigo);
+    if (codigo == 1)
+    printf("banana");
+    else
+        if (codigo == 2)
+        printf("maca");
+        else
+            if (codigo == 3)
+            printf("laranja");
+            else
+                if (codigo == 4)
+                printf("abacate");
+                else
+                    if (codigo == 5)
+                    printf("melancia");
+                    else
+                        if (codigo == 6)
+                        printf("abacaxi");
+                        else
+                            printf("nao ha produtos com esse codigo");
 
 
+}*/
+
+/*
+main()
+
+{
+    float sald, vd, vr;
+    int tpdr;
+    char nome[60];
+
+    printf("informe o nome: ");
+    gets(nome);
+    printf("Informe seu saldo: ");
+    scanf("%f",&sald);
+    printf("\n\nSelecione o tipo de retirada!\nDepositar = 1\nRetirar == 2\n\n");
+    scanf("%d", &tpdr);
+
+    if (tpdr == 2)
+    printf("\ninforme o valor que deseja Retirar : ");
+    scanf("%f",&vr);
+
+    sald = sald - vr;
+    scanf("%f",&sald);
+
+
+        if (sald < 0)
+        printf("Seu saldo final eh %.2f!\n Sua conta foi estourada!",sald);
+        printf("\nValor Retirado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
+
+    else
+        printf("\ninforme o valor que deseja Depositar : ");
+        scanf("%f",&vd);
+
+        sald = sald - vd;
+        scanf("%f",&sald);
+
+        printf("Seu saldo final eh %.2f!",sald);
+        printf("\nValor Depositado = %.2f\nSeu saldo final eh = %.2f!",vd,sald);
 }
 */
+
