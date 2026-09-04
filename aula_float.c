@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 /*
-// aula utilizando float
+// aula utilizando float //
 
                               // questao 1 - correta
 
