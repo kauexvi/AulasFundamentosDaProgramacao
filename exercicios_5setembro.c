@@ -328,3 +328,161 @@ int main()
 
 }
 */
+
+
+/* 
+
+int main()                                                      // algoritmo numeros multiplos //
+
+{
+    int a, b;
+
+    printf("informe o primeiro valor:");
+    scanf("%d",&a);
+    printf("informe o segundo valor:");
+    scanf("%d",&b);
+
+    if (a % b == 0 || b % a == 0)
+    {
+        printf("numeros multiplos");
+    }
+    else
+        printf("numeros nao sao multiplos");
+    
+}
+*/
+
+/*
+                            // algoritmo par ou impar e positivo ou negativo //
+int main()
+{
+    int a;
+    printf("informe o valor:");
+    scanf("%d",&a);
+
+    if (a % 2 == 0)
+        printf("%d eh par",a);
+    else
+        printf("%d eh impar",a);
+
+    if (a < 0)
+    {
+        printf("\n%d eh negativo",a);
+    }
+    else
+        printf("\n%d eh positivo",a);
+}
+*/
+
+
+/*
+int main()
+{
+    int nhr, vhr, salario;
+    char nome[60];
+
+    printf("Informe seu nome: ");
+    gets(nome);
+    printf("Informe o numero de horas trabalhadas: ");
+    scanf("%d", &nhr);
+    setbuf(stdin, NULL);
+    printf("Informe o valor da hora trabalhada: ");
+    scanf("%d", &vhr);
+
+    if (nhr <= 40)
+    {
+        salario = nhr * vhr;
+        printf("O salario do funcionario %s eh: %d", nome, salario);
+    }
+    else
+        if (nhr > 40)
+        {
+            salario = (40 * vhr) + ((nhr - 40) * (vhr * 1.5));
+            printf("O salario do funcionario %s eh: %d", nome, salario);
+        }
+}
+*/
+
+/*
+int main()
+{
+    char time1[60], time2[60];
+    int gols1, gols2;
+
+    printf("Informe o nome do time que esta jogando como mandante: ");
+    gets(time1);
+    printf("Informe o numero de gols do time mandante: ");
+    scanf("%d", &gols1);    
+    setbuf(stdin, NULL);
+    printf("Informe o nome do time que esta jogando como visitante: ");
+    gets(time2);
+    printf("Informe o numero de gols do time visitante: ");
+    scanf("%d", &gols2);
+
+    if (gols1 > gols2)
+    {
+        printf("O time %s venceu a partida com %d gols", time1, gols1);
+    }
+    else
+        if (gols2 > gols1)
+        {
+            printf("O time %s venceu a partida com %d gols", time2, gols2);
+        }
+        else
+            if (gols1 == gols2)
+            {
+                printf("A partida terminou empatada com %d gols para cada time", gols1);
+            }
+}
+*/
+
+
+/*                                     // algoritmo combustivel alcool ou gasolina //
+int main()
+{
+    
+    int alcool, gasolina, qtdl, tpdc;
+    float precoA, precoG, precoF;
+
+    printf("Informe o tipo de combustivel (1 - alcool / 2 - gasolina): ");
+    scanf("%d", &tpdc);
+
+    precoA = 2.90;
+    precoG = 3.30;
+
+    if (tpdc == 1)
+    {
+        printf("Informe a quantidade de litros de alcool: ");
+        scanf("%d", &qtdl);
+
+        if (qtdl <= 20)
+        {
+            precoF = qtdl - ((qtdl * precoA) * 0.03);
+            printf("O valor a ser pago eh: %.2f", precoF);
+        }
+        else
+        {
+            precoF = qtdl * precoA - ((qtdl * precoA) * 0.05);
+            printf("O valor a ser pago eh: %.2f", precoF);
+        }
+    }
+    else
+        if (tpdc == 2)
+        {
+            printf("Informe a quantidade de litros de gasolina: ");
+            scanf("%d", &qtdl);
+
+            if (qtdl <= 20)
+            {
+                precoF = qtdl * precoG - ((qtdl * precoG) * 0.04);
+                printf("O valor a ser pago eh: %.2f", precoF);
+            }
+            else
+            {
+                precoF = qtdl * precoG - ((qtdl * precoG) * 0.06);
+                printf("O valor a ser pago eh: %.2f", precoF);
+            }
+        }
+}
+*/
+

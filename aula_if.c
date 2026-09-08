@@ -89,27 +89,28 @@ int main()                               // corrigido e funcionando corretamente
 
 
 
-/*
+/* 
 
-int main()                 // corrigir um detalhe no if
+int main()                 // algoritmo numeros multiplos //
 
 {
     int a, b;
 
     printf("informe o primeiro valor:");
     scanf("%d",&a);
-    setbuf(stdin, NULL);
     printf("informe o segundo valor:");
     scanf("%d",&b);
 
-    if (a % b == 0)
+    if (a % b == 0 || b % a == 0)
+    {
         printf("numeros multiplos");
+    }
     else
         printf("numeros nao sao multiplos");
-
+    
 }
-
 */
+
 
 
 /*
