@@ -24,7 +24,6 @@ int main()
         scanf("%f", &vr);
 
         sald = sald - vr;
-        scanf("%f", &sald);
 
         if (sald < 0)
         {
@@ -43,10 +42,8 @@ int main()
             scanf("%f", &vd);
 
             sald = sald + vd;
-            scanf("%f", &sald);
 
-            printf("Seu saldo final eh %.2f!", sald);
-            printf("\nValor Depositado = %.2f!", vd, sald);
+            printf("Seu saldo final eh %.2f!\nValor Depositado = %.2f!", sald, vd);
         }
         else 
             printf("opcao invalida");
@@ -304,7 +301,7 @@ int main()
     printf("Informe sua nota: ");
     scanf("%d", &nota);
 
-    if (nota > 0 && nota <= 49)
+    if (nota >= 0 && nota <= 49)
     {
         printf("O aluno %s possui a nota insuficiente", nome);
     }
@@ -330,7 +327,7 @@ int main()
 */
 
 
-/* 
+/*
 
 int main()                                                      // algoritmo numeros multiplos //
 
@@ -342,13 +339,15 @@ int main()                                                      // algoritmo num
     printf("informe o segundo valor:");
     scanf("%d",&b);
 
-    if (a % b == 0 || b % a == 0)
-    {
-        printf("numeros multiplos");
-    }
+    if (a == 0 || b == 0) 
+        printf("Valores nao podem ser zero");
+
     else
-        printf("numeros nao sao multiplos");
-    
+        if (a % b == 0 || b % a == 0) 
+            printf("numeros multiplos");
+        else 
+            printf("numeros nao sao multiplos");
+   
 }
 */
 
@@ -365,17 +364,17 @@ int main()
     else
         printf("%d eh impar",a);
 
-    if (a < 0)
+    if (a >= 0)
     {
-        printf("\n%d eh negativo",a);
+        printf("\n%d eh positivo",a);
     }
     else
-        printf("\n%d eh positivo",a);
+        printf("\n%d eh negativo",a);
 }
 */
 
 
-/*
+/*                                              // calcular horas extras //
 int main()
 {
     int nhr, vhr, salario;
@@ -403,7 +402,7 @@ int main()
 }
 */
 
-/*
+/*                                              // algoritmo vencedor de partida de futebol //
 int main()
 {
     char time1[60], time2[60];
@@ -437,7 +436,7 @@ int main()
 */
 
 
-/*                                     // algoritmo combustivel alcool ou gasolina //
+                                    // algoritmo combustivel alcool ou gasolina //
 int main()
 {
     
@@ -484,5 +483,5 @@ int main()
             }
         }
 }
-*/
+
 
