@@ -87,7 +87,7 @@ int main()
         }
         i++;
     }
-    
+
     printf("menor eh : %d", menor);
     printf("\nmaior eh : %d", maior);
 }
@@ -101,11 +101,11 @@ int main()
 /*
 long int main()
 {
-    long int i, t1, t2, proximo; 
+    long int i, t1, t2, proximo;
     i = 3;
     t1 = 1;
     t2 = 1;
-    
+
     printf("1\n1\n");
 
     while (i <= 20)
@@ -145,14 +145,15 @@ int main()
     i++;
     }
         printf("O valor final da serie S eh: %.4f\n", s);
-
 }
 */
+
+
 
 /*
 long int main()
 {
-    long int cont, num, acumulador; 
+    long int cont, num, acumulador;
     cont = 1;
     acumulador = 1;
 
@@ -170,6 +171,35 @@ long int main()
 */
 
 
+int main()
+{
+    int i, num, fatorial, numF, quantdois;
+    i = 1;
 
+    printf("informe quantidade de numeros : ");
+    scanf("%d", &num);
 
-
+    while (i <= num)
+    {
+        printf("\nInforme numero : ");
+        scanf("%d", &numF);
+        if (numF < 0)
+        {
+            printf("invalido");
+        }
+        else
+        {
+            fatorial = 1;
+            quantdois = 1;
+            setbuf(stdin, NULL);
+            while (quantdois <= numF)
+            {
+                fatorial = fatorial * quantdois;
+                quantdois++;
+            }
+            printf("fatorial de %d = %d", numF, fatorial);
+            setbuf(stdin, NULL);
+        }
+        i++;
+    }
+}
