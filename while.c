@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
 
 
 //                                                      tabuada
@@ -170,7 +172,7 @@ long int main()
 }
 */
 
-
+/*
 int main()
 {
     int i, num, fatorial, numF, quantdois;
@@ -203,3 +205,225 @@ int main()
         i++;
     }
 }
+*/
+
+/*
+int main()
+{
+    int num, intv025, intv2650, intv5175, intv76100, fora;
+
+    intv025 = 0;
+    intv2650 = 0;
+    intv5175
+     = 0;
+    intv76100 = 0;
+    fora = 0;
+
+    printf("informe numeros(negativo para encerrar) : ");
+    scanf("%d", &num);
+
+    while (1)
+    {
+        scanf("%d", &num);
+        if (num < 0)
+        {
+            break;
+        }
+        if (num < 26)
+            intv025++;
+
+        else
+            if (num < 51)
+            {
+                intv2650++;
+            }
+            else
+                if (num < 76)
+                {
+                    intv76100++;
+                }
+                else
+                    if (num > 100)
+                    {
+                        fora++;
+                    }
+    }
+
+    printf("Intervalo entre 0 e 25 = %d", intv025);
+    printf("\nIntervalo entre 26 e 50 = %d", intv2650);
+    printf("\nIntervalo entre 51 e 75 = %d", intv5175);
+    printf("\nIntervalo entre 76 e 100 = %d", intv76100);
+    printf("\nIntervalo maior que 100 = %d", fora);
+}
+*/
+
+
+/*
+int main()
+{
+    float salario, somaS, mediaS;
+    int i, idade, idadeM, idadeMN, qtdM, maior, menor, i2;
+    char genero[20];
+
+    somaS = 0;
+    qtdM = 0;
+    i = 0;
+    idadeM = 0;
+    idadeMN = 0;
+
+    while (1)
+    {
+        printf("\ninforme idade (ou 0 para sair) : ");
+        scanf("%d", &idade);
+
+        if (idade <= 0)
+        {
+            break;
+        }
+        if (idadeM == 0)
+        {
+            idadeM = idade;
+            idadeMN = idade;
+        }
+        else
+        {
+            if (idade > idadeM)
+                {
+                    idadeM = idade;
+                }
+            if (idade < idadeMN)
+                {
+                    idadeMN = idade;
+                }
+        }
+
+            printf("informe salario : ");
+            scanf("%f", &salario);
+
+            if (salario > 0)
+            {
+                somaS = salario + somaS;
+
+                printf("informe sexo (masculino ou feminino) : ");
+                scanf("%s", genero);
+
+                if (salario < 1000 && strcmp(genero, "feminino") == 0)
+                    qtdM = qtdM + 1;
+                else
+                    if (strcmp(genero, "masculino") == 0);
+                    qtdM = qtdM;
+            }
+            else
+            {
+                printf("dado invalido ou negativo!");
+                break;
+            }
+        i++;
+        }
+    mediaS = somaS / i;
+
+    printf("\nMedia de salario do grupo eh : %.2f", mediaS);
+    printf("\nMaior de idade dos alunos eh %d, e menor eh : %d", idadeM, idadeMN);
+    printf("\nQuantidade de mulheres com salario ate 1000 reais eh %d", qtdM);
+}
+*/
+
+
+/*
+int main()
+{
+    char sexo[20], cordocabelo[20], cordosolhos[20];
+    int idade, maioridade;
+    int i, contFLV, primeiro;
+
+    contFLV == 0;
+    i == 0;
+    primeiro == 1;
+
+    while (1)
+    {
+        printf("Informe sexo (masculino/feminino) : ");
+        scanf("%s", sexo);
+
+        if (strcmp(sexo, "fim") == 0){
+            break;
+        }
+
+        printf("\nInforme cor do cabelo\n\nL - Loiro\nC - Castanho\nP - Preto\n\nDigite : ");
+        scanf("%s", cordocabelo);
+        printf("\nInforme idade : ");
+        scanf("%d", &idade);
+        printf("\nInforme cor dos olhos\n\nA - Azuis\nC - Castanho\nV - Verde\n\nDigite : ");
+        scanf("%s", cordosolhos);
+
+        if (primeiro || idade > maioridade)
+        {
+            maioridade = idade;
+            primeiro = 0;
+        }
+
+        if (strcmp(sexo, "feminino") == 0 && strcmp(cordocabelo, "L") == 0 && strcmp(cordosolhos, "V") == 0 && idade <= 35 && idade >= 18)
+            contFLV++;
+
+    i++;
+    }
+    printf("\nNumeros de mulheres com tenham olhos verdes e cabelos louros e tenham entre 18 e 35 anos : %d", contFLV);
+    printf("\nMaior idade dos habitantes: %d anos\n", maioridade);
+}
+*/
+
+
+
+int main()
+{
+    int i, n1, n2;
+    i == 1;
+    float media, medialuno, soma = 0;
+
+    while (i <= 5)
+    {
+        printf("\n\nInforme primeira Nota do Aluno %d : ", i);
+        scanf("%d", &n1);
+        printf("Informe segunda Nota do Aluno %d : ", i);
+        scanf("%d", &n2);
+
+        if (n1 < 0 || n2 < 0)
+            printf("invalido");
+
+        medialuno = (n1 + n2) / 2;
+
+        printf("\nMedia do Aluno %d eh de %.2f", i, medialuno);
+
+        if (medialuno >= 7)
+            printf("\nAprovado!");
+        else
+            printf("\nReprovado");
+        i++;
+        soma = soma + medialuno;
+    }
+    media = soma / 5;
+
+    printf("\n\n\nmedia final eh %.2f", media);
+}
+
+
+
+/*
+long int main()
+{
+    long int cont, num, acumulador;
+    cont = 1;
+    acumulador = 1;
+
+    printf("informe numero : ");
+    scanf("%d", &num);
+
+    while (cont <= num)
+    {
+        printf("\n%d + %d = %d", cont, acumulador, cont + acumulador);
+        acumulador = acumulador + cont;
+        cont++;
+    }
+    printf("\nO somatorio eh: %d", acumulador);
+}
+*/
