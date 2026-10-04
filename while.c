@@ -373,11 +373,11 @@ int main()
 */
 
 
-
+/*
 int main()
 {
     int i, n1, n2;
-    i == 1;
+    i = 1;
     float media, medialuno, soma = 0;
 
     while (i <= 5)
@@ -405,7 +405,7 @@ int main()
 
     printf("\n\n\nmedia final eh %.2f", media);
 }
-
+*/
 
 
 /*
@@ -427,3 +427,81 @@ long int main()
     printf("\nO somatorio eh: %d", acumulador);
 }
 */
+
+/*
+int main()
+{
+    float e, n;
+    e = 1;
+    int fatorial, i;
+    fatorial = 1;
+    i = 1;
+    
+    printf("informe numero : ");
+    scanf("%f", &n);
+
+    while (i <= n)
+    {
+        fatorial = fatorial * i;
+        e = e + (1.0 / fatorial);
+        i++;
+    }
+    printf("\nO valor de E calculado eh: %.5f", e);
+}
+*/
+
+/*
+int main()
+{
+    int alunos, idade, soma2, cont, contA, contI, mediaI;
+    float altura, mediaA, soma1;
+
+    alunos = 5;
+    cont = 1;
+    soma1 = 0;
+    soma2 = 0;
+    contA = 0;
+    contI = 0;
+
+    while (cont <= alunos)
+    {
+        printf("\nInforme idade do aluno %d : ", cont);
+        scanf("%d", &idade);
+        printf("Informe altura do aluno %d : ", cont);
+        scanf("%f", &altura);
+        
+    if (idade > 20)
+        {
+            soma1 = altura + soma1;
+            contA++;
+        }   
+
+    if (altura < 1.70)
+        {
+            soma2 = idade + soma2;
+            contI++;
+        }
+        cont++;
+    }
+
+    if (contA == 0)
+        printf("\nNao ha alunos com mais de 20 anos");
+    else
+        {
+            mediaA = soma1 / contA;
+            printf("\nMedia das alturas dos alunos com mais de 20 anos : %.2f", mediaA);
+        }
+
+    if (contI == 0)
+        printf("\nNao ha alunos com menos de 1,70 de altura");
+    else
+        {
+            mediaI = soma2 / contI;
+            printf("\nIdade media dos alunos com menos de 1,70 de altura : %d", mediaI);
+        }
+
+    return 0;
+}
+*/
+
+
