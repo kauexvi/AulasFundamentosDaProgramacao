@@ -263,7 +263,8 @@ int main()
                                                     printf("Data invalida!");
 
     
-}*/
+}
+*/
 
 /*
 int main()
@@ -295,9 +296,10 @@ int main()
     }
     
 }
-
 */
 
+
+/*
 int main()
 {
     float salario, final;
@@ -334,3 +336,4 @@ int main()
                     printf("salario final = %2.f", final);
                 }
 }
+*/

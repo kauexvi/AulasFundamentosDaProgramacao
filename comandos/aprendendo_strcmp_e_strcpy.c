@@ -80,6 +80,8 @@ int main()
 }
 */
 
+
+/*
 int main() 
 {
     char nome[40];
@@ -100,3 +102,4 @@ int main()
     printf("Categoria copiada com sucesso para outra variavel: %s\n", copiaCategoria);
 
 }
+*/

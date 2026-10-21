@@ -101,6 +101,8 @@ int main()
 }
 */
 
+
+/*
 int main() {
     int num;
     int primo = 1;
@@ -126,7 +128,6 @@ int main() {
     else
         printf("%d nao eh primo.\n", num);
 }
-
-
+*/
 
 

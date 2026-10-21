@@ -123,4 +123,3 @@ int main()
     scanf("%c",&letra); // letra
 
 */
-// teste
