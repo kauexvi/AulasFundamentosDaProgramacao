@@ -214,8 +214,7 @@ int main()
 
     intv025 = 0;
     intv2650 = 0;
-    intv5175
-     = 0;
+    intv5175 = 0;
     intv76100 = 0;
     fora = 0;
 
