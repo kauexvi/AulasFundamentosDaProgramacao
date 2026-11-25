@@ -97,9 +97,6 @@ int main()
                 final = meio - 1; // Nome vem antes no alfabeto
             }
         }
-        if (strcmp(pesq, "fim") == 0) {
-            break;
-        }
         if (achou == 1) {
             printf("Produto '%s' encontrado, descricao: %s.\n", pesq, produtos[meio].desc);
         } else {

@@ -263,7 +263,7 @@ int main()
 }
 */
 
-/*
+
 int main()
 {
     int a[4][4];
@@ -317,7 +317,7 @@ int main()
     printf("\nSoma diagonal acima sec %d",somaE);
     printf("\nSoma diagonal abaixo sec %d",somaF);
 }
-*/
+
 
 /*
 int main() 
@@ -414,7 +414,7 @@ int main()
 }
 */
 
-
+/*
 int main()
 {
     int a[3][3];
@@ -465,3 +465,4 @@ int main()
             
         printf("o maior numero da diagonal principal fatorial eh: %d\n", fat);
 }
+        */
