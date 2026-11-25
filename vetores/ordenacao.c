@@ -20,7 +20,6 @@ int main() {
     // 2. Método da Seleção
     // O laço de 'i' vai até o penúltimo elemento
     for (int i = 0; i < 4; i++) {
-        // O laço de 'j' sempre começa um índice à frente do 'i'
         for (int j = i + 1; j < 5; j++) {
             
             // Se o elemento de trás for maior que o da frente, troca!
